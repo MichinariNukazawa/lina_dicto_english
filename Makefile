@@ -10,6 +10,7 @@ run:
 
 overwrite:
 	cp -r overwrite/* lina_dicto/lina_dicto/
+	sed -i -e 's/Esperanto/English/' lina_dicto/lina_dicto/index.html
 
 copy_dictionary: copy
 	rm -rf lina_dicto/lina_dicto/dictionary/*
