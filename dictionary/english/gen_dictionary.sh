@@ -38,8 +38,8 @@ function convert_json(){
 
 pushd ${SCRIPT_DIR}
 
-mkdir -p tmp/
-pushd tmp/
+mkdir -p w_dict/
+pushd w_dict/
 
 SRC_URL=http://ftp.monash.edu/pub/nihongo/edict.zip
 DST_FILE=./edict.zip
