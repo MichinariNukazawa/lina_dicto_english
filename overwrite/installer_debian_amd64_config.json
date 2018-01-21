@@ -1,0 +1,13 @@
+{
+	"name": "lina-dictoi-english",
+	"src": "../release/lina_dicto_english-linux-x64/",
+	"dest": "../release/",
+	"arch": "amd64",
+	"icon": "image/icon.png",
+	"categories": [
+		"Utility"
+	],
+	"lintianOverrides": [
+		"changelog-file-missing-in-native-package"
+	]
+}

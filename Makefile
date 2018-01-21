@@ -22,6 +22,7 @@ copy:
 	- cp -r ../lina_dicto ./ >> work.log 2>&1
 
 package: overwrite
+	make clean -C lina_dicto
 	cd lina_dicto && bash ./installer_win32_x64.sh	english
 	cd lina_dicto && bash ./installer_darwin.sh	english
 	cd lina_dicto && bash ./installer_debian.sh	english
