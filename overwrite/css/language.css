@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+html, body{
+	background: linear-gradient(-30deg, rgba(110, 220, 255, 1), rgba(200, 240, 255, 1));
+}
+
+.timeline__item__query__string{
+	border-left: solid 7px rgba(0, 90, 255, 1);
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.timeline__item__response__keyword{
+	border-left: solid 3px rgba(60, 130, 255, 0.5);
+}
+
+#query-area{
+	background: rgba(200, 240, 255, 0.9);
+}
+
+#query-area__query-input__input{
+	background-color: rgba(200, 250, 255, 0.7);
+}
+
+#query-area__query-incrementals{
+	color: rgba(0, 0, 40, 0.7);
+}
+
+.input-replace-button{
+	border-color: rgba( 0, 0, 0, 0.1);
+}
+
+.goto-google-translate-button{
+	border-color: rgba( 0, 0, 0, 0.1);
+}
+
