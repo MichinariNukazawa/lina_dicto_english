@@ -1,5 +1,5 @@
 {
-	"name": "lina-dictoi-english",
+	"name": "lina-dicto-english",
 	"src": "../release/lina_dicto_english-linux-x64/",
 	"dest": "../release/",
 	"arch": "amd64",
