@@ -5,7 +5,10 @@ lina\_dicto\_english
 # About
 lina\_dicto\_english は日本語/English変換を検索できる辞書アプリケーションです。  
 
-Esperanto辞書 [lina\_dicto](https://github.com/MichinariNukazawa/lina_dicto) をEnglish版に改変したものです。  
+Esperanto辞書 [lina\_dicto](https://github.com/MichinariNukazawa/lina_dicto) の英語版でもあります。  
+
+# Screenshot/Image
+![lina\_dicto\_english](document/image/lina_dicto_english_windows.png)  
 
 ## アプリケーションの特徴
 - アプリケーション画面上で過去の検索結果が簡単に確認できる、タイムライン風のUI
@@ -18,9 +21,6 @@ Esperanto辞書 [lina\_dicto](https://github.com/MichinariNukazawa/lina_dicto) �
  - 検索がヒットしなかった場合に、ブラウザでgoogle translateを開くリンクを提示 (フォールバック機能)
 - 検索履歴
  - 検索履歴をファイルへ自動保存(簡易統計機能あり)
-
-# Screenshot/Image
-![lina\_dicto\_english](document/image/lina_dicto_english_windows.png)  
 
 # Get luna\_dicto\_english
 [Download for latest release](https://github.com/MichinariNukazawa/lina_dicto_english/releases)  
