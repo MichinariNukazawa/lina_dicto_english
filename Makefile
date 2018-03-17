@@ -19,13 +19,14 @@ dictionary:
 	bash ./dictionary/english/gen_dictionary.sh
 
 copy:
+	rm -rf lina_dicto/
 	- cp -r ../lina_dicto ./ >> work.log 2>&1
 
 package: overwrite
 	make clean -C lina_dicto
-	cd lina_dicto && bash ./installer_win32_x64.sh	english
-	cd lina_dicto && bash ./installer_darwin.sh	english
-	cd lina_dicto && bash ./installer_debian.sh	english
+	cd lina_dicto && bash ./release/installer_win32_x64.sh	english
+	cd lina_dicto && bash ./release/installer_darwin.sh	english
+	cd lina_dicto && bash ./release/installer_debian.sh	english
 
 clean:
 	rm -rf lina_dicto/

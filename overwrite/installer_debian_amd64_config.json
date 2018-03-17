@@ -1,7 +1,7 @@
 {
 	"name": "lina-dicto-english",
-	"src": "../release/lina_dicto_english-linux-x64/",
-	"dest": "../release/",
+	"src": "../release/release/lina_dicto_english-linux-x64/",
+	"dest": "../release/release/",
 	"arch": "amd64",
 	"icon": "image/icon.png",
 	"categories": [
