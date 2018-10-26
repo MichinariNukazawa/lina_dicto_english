@@ -10,6 +10,8 @@ overwrite: copy change_dictionary
 	cp -r overwrite/* lina_dicto/lina_dicto/
 	sed -i -e 's/Esperanto/English/' lina_dicto/lina_dicto/index.html
 	sed -i -e 's/lina_dicto/lina_dicto_english/' lina_dicto/lina_dicto/package.json
+	sed -i -e 's/lina_dicto/lina_dicto_english/' lina_dicto/lina_dicto/installer_debian_amd64_config.json
+	sed -i -e 's/lina-dicto/lina-dicto-english/' lina_dicto/lina_dicto/installer_debian_amd64_config.json
 
 change_dictionary: copy
 	rm -rf lina_dicto/lina_dicto/dictionary/*
