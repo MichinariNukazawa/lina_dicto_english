@@ -1,6 +1,6 @@
 'use strict';
 
-/*export default*/ class Language{
+module.exports = class Language{
 	static get_code(){
 		return 'en';
 	}
