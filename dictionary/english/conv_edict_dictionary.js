@@ -223,6 +223,8 @@ class Edict{
 
 	static write(fs, filepath, dict)
 	{
+		process.stdout.write("path:`" + filepath + "`\n");
+
 		try{
 			fs.unlinkSync(filepath);
 		} catch (err) {
@@ -265,8 +267,9 @@ class Edict{
 };
 
 const datafile = path.join(__dirname, 'tmp/dictionary_edict_00.json');
-const dstfile = path.join(__dirname, './dictionary_edict.json');
+const dstfile = path.join(__dirname, 'dictionary_edict.json');
 
+console.log(datafile);
 const t = fs.readFileSync(datafile, 'utf8');
 
 let dict = Edict.get_etoj(JSON.parse(t));

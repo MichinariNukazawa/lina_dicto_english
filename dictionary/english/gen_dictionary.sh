@@ -24,22 +24,24 @@ function download_file(){
 
 function convert_utf(){
 	OUTPUT_FILE=${INPUT_FILE%.*}_utf8.txt
-	iconv -f EUC-JP-MS -t UTF8 "${INPUT_FILE}" |  perl -p -e 's/\r\n/\n/' > "${OUTPUT_FILE}"
+	iconv -f EUC-JP -t UTF8 "${INPUT_FILE}" |  perl -p -e 's/\r\n/\n/' > "${OUTPUT_FILE}"
 }
 
 function convert_json(){
 	echo -e "[" > "${OUTPUT_FILE}"
+
 	cat "${INPUT_FILE}" | perl -p -e 's/"/\\"/g' | \
 		perl -p -e 's/^([^\/]+)\/(.*)$/["\1","\2"],/' >> "${OUTPUT_FILE}"
-	sed -i '$s/.$//' "${OUTPUT_FILE}"	# 末尾の','を除去する
+	sed -i.bak '$s/.$//' "${OUTPUT_FILE}"	# 末尾の','を除去する
+	rm "${OUTPUT_FILE}.bak"
 	echo -e "]" >> "${OUTPUT_FILE}"
 }
 
 
 pushd ${SCRIPT_DIR}
 
-mkdir -p w_dict/
-pushd w_dict/
+mkdir -p tmp/
+pushd tmp/
 
 SRC_URL=http://ftp.monash.edu/pub/nihongo/edict.zip
 DST_FILE=./edict.zip
