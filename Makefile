@@ -20,6 +20,7 @@ change_dictionary:
 	rm -rf lina_dicto/lina_dicto/dictionary/*
 	mkdir -p lina_dicto/lina_dicto/dictionary/english/
 	cp -r dictionary/english/dictionary_edict.json lina_dicto/lina_dicto/dictionary/english/
+	cp -r dictionary/english/*.md lina_dicto/lina_dicto/dictionary/english/
 
 copy_lina_dicto:
 	rm -rf lina_dicto/
