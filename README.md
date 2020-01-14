@@ -8,7 +8,8 @@ lina\_dicto\_english は日本語/English変換を検索できる辞書アプリ
 Esperanto辞書 [lina\_dicto](https://github.com/MichinariNukazawa/lina_dicto) の英語版でもあります。  
 
 # Screenshot/Image
-![lina\_dicto\_english](document/image/lina_dicto_english_windows.png)  
+<img width=600 alt="lina_dicto_english"          src="document/image/lina_dicto_english_0.2.5.png">  
+<img width=300 alt="lina_dicto_english darkmode" src="document/image/lina_dicto_english_0.2.5_darkmode.png">  
 
 ## アプリケーションの特徴
 - アプリケーション画面上で過去の検索結果が簡単に確認できる、タイムライン風のUI
