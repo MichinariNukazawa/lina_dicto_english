@@ -61,6 +61,7 @@ convert_json
 popd
 
 node conv_edict_dictionary.js
+node conv_edict_dictionary_extend.js
 
 popd
 
